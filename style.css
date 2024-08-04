@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Hanken+Grotesk:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Hanken Grotesk;
+}
+
+.results {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 540px;
+    margin: auto;
+    margin-top: 140px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.493);
+}
+
+.result {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 20px;
+    padding: 2em;
+    text-align: center;
+}
+
+.heading {
+    color: hsl(241, 100%, 89%);
+    padding-bottom: 20px;
+}
+
+.score {
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    border-radius: 50%;
+    width: 150px;
+    padding: 2em;
+    margin: auto;
+}
+
+.score h1 {
+    font-size: 50px;
+    color: white;
+}
+
+.score h4 {
+    font-size: 13px;
+    color: hsl(241, 100%, 89%);
+}
+
+.great {
+    color: white;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.description {
+    color: hsl(241, 100%, 89%);
+}
+
+.summary {
+    padding: 25px;
+}
+
+.summary .heading {
+    color: hsl(224, 30%, 27%);
+}
+
+.summary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 16px;
+    border-radius: 5px;
+}
+
+.no-1 {
+    background-color: rgba(255, 87, 87, 0.062);
+}
+
+.no-2 {
+    background-color: hsla(39, 100%, 56%, 0.062);
+}
+
+.no-3 {
+    background-color: hsla(166, 100%, 37%, 0.062);
+}
+
+.no-4 {
+    background-color: hsla(234, 85%, 45%, 0.062);
+}
+
+.reaction-box {
+    display: flex;
+}
+
+.memory-box {
+    display: flex;
+}
+
+.verbal-box {
+    display: flex;
+}
+
+.visual-box {
+    display: flex;
+}
+
+.summary-score {
+    text-decoration: none;
+    color: hsl(241, 100%, 89%);
+    font-weight: 500;
+}
+
+span {
+    color: hsl(224, 30%, 27%);
+    font-weight: 700;
+}
+
+h5 {
+    padding-left: 7px;
+}
+
+.btn {
+    height: 35px;
+    width: 100%;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+}
+
+.attribution {
+    margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+    .results {
+        display: block;
+        margin-top: 0px;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .result {
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+    }
+}
